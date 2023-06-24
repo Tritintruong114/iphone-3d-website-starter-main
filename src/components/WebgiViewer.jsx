@@ -28,7 +28,7 @@ function WebgiViewer() {
   const canvasRef = useRef(null);
 
   const memorizedScrollAnimation = useCallback((position, target, onUpdate) => {
-    if (position && target & onUpdate) {
+    if (position && target && onUpdate) {
       scrollAnimation(position, target, onUpdate);
     }
   }, []);
